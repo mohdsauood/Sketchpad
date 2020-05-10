@@ -1,0 +1,93 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body {
+   background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 27%, rgba(159,158,158,1) 88%, rgba(140,139,139,1) 100%);
+background-size: 100vw 100vw;
+}
+
+.maincontainer {
+    width: 40vw;
+    height: 60vh;
+    margin: 5vh auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns:repeat(16,1fr);
+    grid-template-rows:repeat(16,1fr);
+    box-shadow: 15px 16px 12px darkgray ;
+}
+
+.box{
+    border: .5px solid rgba(219, 219, 219, 0.26);
+    width: auto;
+    height: auto;
+}
+
+.button-div {
+    margin: 0 auto;
+    width: 30vw;
+}
+
+.dbutton{
+    font-size: 1.3rem;
+    margin-left: 2rem;
+    padding: .4rem;
+    border-radius: 34px;
+    box-shadow: 2px 4px 8px darkgray ;
+    cursor: pointer;
+    text-transform: capitalize;
+    transform: scale(1);
+}
+.dbutton:hover{
+    transform: scale(1.099283);
+}
+#clear_button{
+     text-shadow: 1px 2px lightgray;
+    background-color: white;
+}
+#custom_button{
+    background-color: black;
+    color: white;
+     text-shadow: 1px 2px gray;
+}
+
+#gray_button{
+    background-color: gainsboro;
+     text-shadow: 1px 2px darkgray;
+}
+
+#color_button{
+    background-image: url(images/colorbutton.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 2px black;
+}
+.pallete-div {
+    margin: 4vh auto;
+    width: 50vw;
+    min-height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.palletes {
+    
+}
+
+.palletes img{
+    width: 60%;
+    box-shadow: 5px 10px 8px darkgray ;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.palletes img:hover{
+    transform: scale(1.1);
+}
