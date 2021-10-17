@@ -98,16 +98,17 @@ body {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   body {
     font-size: 15px;
   }
   .maincontainer {
     width: 450px;
     height: 450px;
+    
   }
 }
-@media screen and (max-width: 460px) {
+@media only screen and (max-width: 460px) {
   body {
     font-size: 12px;
   }
@@ -126,7 +127,7 @@ body {
 
 @media screen and (max-width: 360px) {
   .maincontainer {
-    width: 300px;
+    width: 100%;
     height: 300px;
   }
 
@@ -135,3 +136,4 @@ body {
     height: 80px;
   }
 }
+
