@@ -46,8 +46,8 @@ colorbutton.addEventListener("click", ()=>{
     })
 });
 
-const colorbutton=document.querySelector('#dark_button');
-colorbutton.addEventListener("click", ()=>{
+const darkbutton=document.querySelector('#dark_button');
+darkbutton.addEventListener("click", ()=>{
     const boxes=document.querySelectorAll('.box');
     boxes.forEach((val)=>{
         val.addEventListener('mouseover',function(){
@@ -84,7 +84,7 @@ function colorpallete(){
                 }
 			else  if(value.dataset.val==5)
                 {
-                    const arrcolor=['#ffff','#ffff','#ffff','#ffff'];
+                    const arrcolor=['#0000','#ffff','#ffff','#ffff'];
                     setcolorpallete(arrcolor);
                 }
         });
