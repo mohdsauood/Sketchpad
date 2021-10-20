@@ -46,6 +46,18 @@ colorbutton.addEventListener("click", ()=>{
     })
 });
 
+const colorbutton=document.querySelector('#dark_button');
+colorbutton.addEventListener("click", ()=>{
+    const boxes=document.querySelectorAll('.box');
+    boxes.forEach((val)=>{
+        val.addEventListener('mouseover',function(){
+            const randomColor= '#'+Math.floor(Math.random()*16777215).toString(16);
+            val.style.backgroundColor=randomColor;
+            val.style.transition='0.3s';
+        });
+    })
+});
+
 function colorpallete(){
     const palletes=document.querySelectorAll('.palletes img');
     palletes.forEach((value)=>{
@@ -68,6 +80,11 @@ function colorpallete(){
            else  if(value.dataset.val==4)
                 {
                     const arrcolor=['#f1fcfc','#40e0d0','#72b5b7','#633a82'];
+                    setcolorpallete(arrcolor);
+                }
+			else  if(value.dataset.val==5)
+                {
+                    const arrcolor=['#ffff','#ffff','#ffff','#ffff'];
                     setcolorpallete(arrcolor);
                 }
         });
